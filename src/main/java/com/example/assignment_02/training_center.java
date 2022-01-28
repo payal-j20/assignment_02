@@ -19,7 +19,7 @@ import org.springframework.validation.annotation.Validated;
 
 /**
  *
- * @author shiv
+ * @author payal
  */
 //@Validated
 public class training_center {

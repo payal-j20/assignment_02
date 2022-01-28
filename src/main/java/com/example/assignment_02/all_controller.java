@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 /**
  *
- * @author shiv
+ * @author payal
  */
 @Controller
 public class all_controller {
