@@ -42,6 +42,12 @@
                 <artifactId>derbyclient</artifactId>
                 <version>10.10.2.0</version>
                 </dependency>
+                    <dependency>
+                    <groupId>org.apache.tomcat</groupId>
+                    <artifactId>tomcat-jasper</artifactId>
+                    <version>9.0.19</version>
+                </dependency>
+
 	</dependencies>
 
 	<build>

@@ -12,6 +12,7 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <h1>send data to restapi at /add in json format use postman to add data. </h1>
+        <h3>send data to restapi at /add in json format use postman to add data. </h3>
+        <h3>to fetch all training centers post a get request at /getcenters</h3>
     </body>
 </html>
