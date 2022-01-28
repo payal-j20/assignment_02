@@ -23,6 +23,7 @@ import javax.validation.ConstraintViolation;
 import javax.validation.ConstraintViolationException;
 import javax.validation.Valid;
 import org.json.JSONObject;
+import org.postgresql.util.PSQLException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
@@ -99,7 +100,16 @@ public class rest_controller {
             }
             
         }
+        catch(PSQLException ex){
+            int k=0;
+            if(k==ex.getErrorCode()){
+                JSONObject er=new JSONObject();
+                er.put(""+HttpStatus.BAD_REQUEST, "Center code already exist");
+                return er.toString();
+            }
+        }
            catch (SQLException ex) {
+               System.out.println("catched : "+ex.getErrorCode());
                System.out.println("Exception "+ex);
            }
         
