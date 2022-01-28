@@ -1,4 +1,4 @@
-send a post request to api in this format:https://vast-eyrie-18750.herokuapp.com/add
+1)send a post request to api in this format:https://vast-eyrie-18750.herokuapp.com/add
 {
   "centername": "nn",
   "centercode": "AA2fdl043012",
@@ -20,6 +20,6 @@ send a post request to api in this format:https://vast-eyrie-18750.herokuapp.com
     "course_offered":["bsc","bca"]
   
 }
-validation annotation are included so that user enters correct data.Center code should be unique.
+validation annotation are included so that user enters correct data.Center code should be unique. request and response is in json.
 
-Send a get request to :https://vast-eyrie-18750.herokuapp.com/getcenters api to fetch all centers.
+2)Send a get request to :https://vast-eyrie-18750.herokuapp.com/getcenters api to fetch all centers.
